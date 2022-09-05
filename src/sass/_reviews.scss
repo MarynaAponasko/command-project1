@@ -1,0 +1,64 @@
+.reviews__container{
+    padding-top: 80px;
+    padding-bottom: 393px;
+    background-image:url("../images/mobile/reviews.mobile-background.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.reviews-box__photo-emily{
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+}
+
+.reviews-box__comment{
+    padding: 34px 39px 34px 39px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 2.4;
+    text-align: center;
+    color:var(--white-font-color);
+    background-color: var(--background-color);
+}
+
+.reviews-box__residence{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.9;
+    text-align: center;
+    color: #000000;
+}
+
+@media screen and (min-width:768px){
+    .reviews__container{
+        padding-top: 223px;
+        padding-bottom: 384px;
+        background-image:url("../images/mobile/reviews.tablet-background.jpg");
+        background-size: cover;
+    }
+    .reviews-box__comment{
+        font-size: 14px;
+        line-height: 1.9;
+    }
+    .reviews-box__residence{
+        font-size: 16px;
+        line-height: 1.9;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .reviews__container{
+        padding-top: 573px;
+        padding-bottom: 207px;
+        background-image:url("../images/mobile/reviews.desktop-background.jpg");
+    }
+    .reviews-box__comment{
+        font-size: 16px;
+        line-height: 1.9;
+    }
+}

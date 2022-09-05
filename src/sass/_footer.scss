@@ -91,16 +91,36 @@
     justify-content: center;
     border-radius: 50%;
     background-color: #F8D24E;
+   
     width: 32px;
     height: 32px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms;
     fill: #84A178;
-
     &:hover,
     &:focus {
-        fill: #FCFCFC;
-
-    }
+        fill: #FCFCFC ;
+        transform: translateY(-4px);
+        box-shadow: 0px 0px 5px #E1E1E1;
+        stroke: #115a14;
+        animation: rotatesocials__link .5s infinite alternate ease-in-out;
+        
+           /* @keyframes rotatesocials__link {
+                0% {
+                    transform: rotate(10deg);
+                }
+        
+                100% {
+                    transform: rotate(-10deg);
+                }
+        
+            }*/
+        }
+       
 }
+
+
+
 
 .footer__contacts {
     
