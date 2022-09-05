@@ -48,7 +48,7 @@
   width: 62px;
   height: 24px;
   background: #84a278;
-  padding: 5px 12px;
+  padding: 5px 10px;
 
   &:hover {
     border-color: #0a8817;
@@ -92,8 +92,72 @@
   left: 60px;
   filter: drop-shadow(10px 10px 45px white);
 }
+.ice-creams {
+  animation: bounce 3s ease;
+  animation-timing-function: initial;
+}
+
+@keyframes bounce {
+  0% {
+    transform: rotate(0);
+    transform-origin: top right;
+    animation-timing-function: ease-in-out;
+  }
+
+  60% {
+    transform: rotate(275deg);
+    transform-origin: top right;
+    animation-timing-function: ease-in-out;
+  }
+  40% {
+    transform: rotate(275deg);
+    transform-origin: top right;
+    animation-timing-function: ease-in-out;
+  }
+  80% {
+    transform: rotate(275deg) translateY(0);
+    opacity: 1;
+    transform-origin: top right;
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: translateY(700px);
+    opacity: 0;
+  }
+}
+
 .main_ice-cream {
   width: auto;
+  animation: bounce1 3s ease;
+  animation-timing-function: initial;
+}
+@keyframes bounce1 {
+  0% {
+    transform: rotate(0);
+    transform-origin: top right;
+    animation-timing-function: ease-in-out;
+  }
+
+  60% {
+    transform: rotate(360deg);
+    transform-origin: top right;
+    animation-timing-function: ease-in-out;
+  }
+  40% {
+    transform: rotate(360deg);
+    transform-origin: top right;
+    animation-timing-function: ease-in-out;
+  }
+  80% {
+    transform: rotate(360deg) translateY(0);
+    opacity: 1;
+    transform-origin: top right;
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: translateY(700px);
+    opacity: 0;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -300,7 +364,7 @@
     width: 134px;
     height: 42px;
     background: #84a278;
-    padding: 12px 34px;
+    padding: 10px 34px;
     margin-right: 12px;
   }
 
