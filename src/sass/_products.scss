@@ -1,18 +1,18 @@
 @media screen and (max-width: 767px) {
+    // .products {
+    //     background-color: #F5F5F5;
+    // }
     .products {
-        background-color: #F5F5F5;
-    }
-    .products-background {
-        background-image: url(../images/mobile/bg-1.png), url(../images/mobile/bg-2.png), url(../images/mobile/bg-3.png);
+        background-image: url(../images/mobile/bg-1.jpg), url(../images/mobile/bg-2.jpg), url(../images/mobile/bg-3.jpg);
         background-position: top 0px right 0px, top 700px right 0px, top 1276px right 0px;
         background-repeat: no-repeat, no-repeat, no-repeat;
         max-width: 480px;
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-        .products-background {
-                        background-image: url(../images/mobile/bg-1@2x.png), url(../images/mobile/bg-2@2x.png),
-                            url(../images/mobile/bg-3@2x.png);
+        .products{
+                        background-image: url(../images/mobile/bg-1@2x.jpg), url(../images/mobile/bg-2@2x.jpg),
+                            url(../images/mobile/bg-3@2x.jpg);
             }
         }
 
@@ -249,7 +249,7 @@
 
 @media screen and (min-width: 768px) {
     .products-background {
-        background-image: url(../images/tablet/product-bg.png);
+        background-image: url(../images/tablet/product-bg.jpg);
         background-repeat: no-repeat;
         max-width: 768px;
 
@@ -258,7 +258,7 @@
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
             .products-background {
-                background-image: url(../images/tablet/product-bg@2x.png)
+                background-image: url(../images/tablet/product-bg@2x.jpg)
             }
         }
     }
@@ -409,14 +409,14 @@
 
 @media screen and (min-width: 1200px) {
     .products-background {
-        background-image: url(../images/desktop/product-bgr-desktop.jpg);
+        background-image: url(../images/desktop/bg.jpg);
         max-width: 1200px;
 
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
             .products-background {
-                background-image: url(../images/desktop/product-bgr-desktop@2x.jpg)
+                background-image: url(../images/desktop/bg@2x.jpg)
             }
         }
         background-repeat: no-repeat;
