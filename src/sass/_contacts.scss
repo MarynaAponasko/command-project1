@@ -240,21 +240,3 @@ address {
   border: 2px solid var(--button-hover-color);
 }
 
-.contacts {
-  position: relative;
-  top: -340px;
-}
-
-.contacts {
-  @media screen and (min-width: 768px) {
-    position: relative;
-    top: -300px;
-  }
-}
-
-.contacts {
-  @media screen and (min-width: 1200px) {
-    position: relative;
-    top: -100px;
-  }
-}
