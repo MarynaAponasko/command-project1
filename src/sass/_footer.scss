@@ -1,8 +1,16 @@
 .footer {
     background-color: #84A178;
-    padding-top: 32px;
+   
 
 
+}
+.footer__box--text{
+margin-bottom: 32px;
+@media screen and (min-width: 1200px) {
+        margin-bottom: 54px;
+        
+
+    }
 }
 
 .footer__text {
@@ -41,7 +49,7 @@
     color: var(--white-font-color);
     
     width: 200px;
-    margin-bottom: 32px;
+    
     @media screen and (min-width: 768px) {
         font-size: 48px;
         line-height: 1.23;
@@ -49,7 +57,7 @@
         }
 
     @media screen and (min-width: 1200px) {
-        margin-bottom: 54px;
+        
         line-height: 1.31;
         width: 100%;
 
@@ -65,6 +73,16 @@
     }
 
    
+}
+.socials__box{
+    @media screen and (max-width: 768px) {
+            margin-bottom: 40px;
+            }
+    
+    @media screen and (min-width: 1200px) {
+            margin-bottom: 60px;
+            }
+
 }
 
 .socials {
@@ -132,16 +150,16 @@
     color: #131313;
 
     @media screen and (max-width: 768px) {
-        margin-bottom: 40px;
+       
         font-size: 14px;
         
 
     }
 
     @media screen and (min-width: 1200px) {
-        margin-bottom: 60px;
+       
         width: 100%;
-        font-size: 12px;
+        font-size: 16px;
 
     }
 }
@@ -158,17 +176,18 @@
 
 }
 
+
 .footer__rights {
     margin: auto;
     width: 280px;
-    padding-top: 16px;
+    
     
     font-weight: 700;
     font-size: 14px;
     line-height: 1.52;
     text-align: center;
     color: #7A7A7A;
-    padding-bottom: 62px;
+    
 
     @media screen and (min-width:768px) {
         width: 100%;
@@ -185,5 +204,19 @@
 .footer__line {
     border-top: 1px solid #E1E1E1;
     max-width: 100%;
+    padding-top: 16px;
+    padding-bottom: 62px;
+    
+    @media screen and (min-width:768px) {
+        padding-top: 14px;
+        padding-bottom: 13px;
+    
+        }
+    
+     @media screen and (min-width: 1200px) {
+        padding-top: 12px;
+        padding-bottom: 11px;
+    
+        }
 
 }
