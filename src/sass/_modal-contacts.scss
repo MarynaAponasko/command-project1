@@ -140,3 +140,7 @@
   border: 1px solid transparent;
   background-color: var(--accent-color);
 }
+.form__submit:hover,
+.form__submit:focus {
+  background-color: var(--button-hover-color);
+}
