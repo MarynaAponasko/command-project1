@@ -216,6 +216,9 @@ address {
 }
 .button__item {
   margin-bottom: 8px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
 }
 
 .button__img {
@@ -227,7 +230,10 @@ address {
 }
 
 .contacts {
-  margin-bottom: 32px;
+  margin-bottom: 40px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 120px;
+  }
 }
 
 .button__dark:hover,
@@ -239,4 +245,3 @@ address {
 .button__light:focus {
   border: 2px solid var(--button-hover-color);
 }
-

@@ -59,7 +59,7 @@
   flex-direction: column;
 }
 .form__header {
-  font-family: 'var(--title-font)';
+  font-family: var(--title-font);
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 24px;
@@ -139,4 +139,8 @@
   border-radius: 10px;
   border: 1px solid transparent;
   background-color: var(--accent-color);
+}
+.form__submit:hover,
+.form__submit:focus {
+  background-color: var(--button-hover-color);
 }
