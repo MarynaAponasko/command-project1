@@ -57,7 +57,7 @@
     background-image: url('../images/advantages/cow.png');
     width: 36px;
     height: 36px;
-    background-color: #f8d24e;
+    background-color: var(--accent-color);
     border-radius: 50px;
     background-repeat: no-repeat;
     background-size: contain;
@@ -81,7 +81,7 @@ screen and (min-resolution: 192dpi) {
     background-image: url('../images/advantages/ice-cream.png');
     width: 36px;
     height: 36px;
-    background-color: #f8d24e;
+    background-color: var(--accent-color);
     border-radius: 50px;
     background-repeat: no-repeat;
     background-size: contain;
@@ -105,7 +105,7 @@ screen and (min-resolution: 192dpi) {
     background-image: url('../images/advantages/weight.png');
     width: 36px;
     height: 36px;
-    background-color: #f8d24e;
+    background-color: var(--accent-color);
     border-radius: 50px;
     background-repeat: no-repeat;
     background-size: contain;
@@ -130,7 +130,7 @@ screen and (min-resolution: 192dpi) {
     letter-spacing: 0.04em;
     text-transform: lowercase;
     text-transform: uppercase;
-    color: #FCFCFC;
+    color: var(--white-font-color);
     margin-top: 16px;
     margin-bottom: 18px;
 
@@ -153,7 +153,7 @@ screen and (min-resolution: 192dpi) {
     font-size: 12px;
     line-height: 1.7;
     text-align: center;
-    color: #FCFCFC;
+    color: var(--white-font-color);
     width: 230px;
 
 @media screen and (min-width: 768px) {

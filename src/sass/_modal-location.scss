@@ -30,7 +30,7 @@
     top: 50%;
     left: 50%;
 
-    border: 2px solid var(--axent-colour);
+    border: 2px solid var(--accent-color);
     border-radius: 10px;
 
     margin: auto;
@@ -110,7 +110,7 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    background-color: var(--axent-colour);
+    background-color: var(--accent-color);
     border-radius: 10px;
     color: #000000;
 
@@ -118,7 +118,7 @@
 
     &:hover,
     &:focus {
-        background-color: #0A8817;
+        background-color: var(--button-hover-color);
     }
 }
 
@@ -146,6 +146,6 @@
 
     &:hover,
     &:focus {
-        fill: var(--axent-colour);
+        fill: var(--accent-color);
     }
 }
