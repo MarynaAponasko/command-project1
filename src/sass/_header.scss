@@ -118,3 +118,27 @@
     display: none;
   }
 }
+
+.scrollup {
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  outline: none;
+  z-index: 999999;
+}
+
+.scrollup::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  transform: translate(-50%, -30%) rotate(45deg);
+  border-top: 5px solid var(--background-color);
+  border-left: 5px solid var(--background-color);
+}
