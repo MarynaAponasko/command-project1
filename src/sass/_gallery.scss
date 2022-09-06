@@ -1,11 +1,25 @@
-.gallery{
+.gallery__container{
+    position: relative;
     background-color: var(--white-font-color);
 }
 
-.ice-cream-gallery__container{
- 
-    background-image:url(../images/mobile/gallery.mobile-background.jpg);
-    width: 280px;
-    height: 130px;
-    border-radius: 7.40681px;
-}
+.gallery__img {
+    border-radius: 7px;
+    position: absolute;
+    left: 50%;
+    top: -34px;
+    transform: translateX(-50%);
+  }
+
+  @media screen and (min-width:768px) {
+    .gallery__container{
+        top:-164px;
+    }
+  }
+
+  @media screen and (min-width:1200px) {
+    .gallery__container{
+        top: -84px;
+    }
+  }
+

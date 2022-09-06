@@ -12,7 +12,7 @@
     font-size: 18px;
     line-height: 1.22;
     text-transform: uppercase;
-    color: #FCFCFC;
+    color: var(--white-font-color);
     margin-bottom: 16px;
     width: 232px;
     @media screen and (min-width: 768px) {
@@ -38,7 +38,7 @@
     line-height: 1.20;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #FCFCFC;
+    color: var(--white-font-color);
     
     width: 200px;
     margin-bottom: 32px;
@@ -90,7 +90,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: #F8D24E;
+    background-color: var(--accent-color);
    
     width: 32px;
     height: 32px;
@@ -152,7 +152,7 @@
     font-size: 12px;
     line-height: 1.86;
     text-align: right;
-    color: #FCFCFC;
+    color: var(--white-font-color);
 
 
 

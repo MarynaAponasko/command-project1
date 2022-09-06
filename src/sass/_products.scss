@@ -1,18 +1,19 @@
 @media screen and (max-width: 767px) {
+    // .products {
+    //     background-color: #F5F5F5;
+    // }
     .products {
-        background-color: #F5F5F5;
-    }
-    .products-background {
-        background-image: url(../images/mobile/bg-1.png), url(../images/mobile/bg-2.png), url(../images/mobile/bg-3.png);
-        background-position: top 0px right 0px, top 700px right 0px, top 1276px right 0px;
+        background-image: url(../images/mobile/bg-1.jpg), url(../images/mobile/bg-2.jpg), url(../images/mobile/bg-3.jpg);
+        background-position: top 0px right 0px, top 700px right 0px, top 1267px right 0px;
         background-repeat: no-repeat, no-repeat, no-repeat;
-        max-width: 480px;
+        max-width: 100%;
+        background-size: cover, cover, cover;
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-        .products-background {
-                        background-image: url(../images/mobile/bg-1@2x.png), url(../images/mobile/bg-2@2x.png),
-                            url(../images/mobile/bg-3@2x.png);
+        .products{
+                        background-image: url(../images/mobile/bg-1@2x.jpg), url(../images/mobile/bg-2@2x.jpg),
+                            url(../images/mobile/bg-3@2x.jpg);
             }
         }
 
@@ -173,7 +174,7 @@
 }
 
 .products-title {
-    font-family: 'Seymour One';
+    font-family: var(--title-font);
     font-weight: 400;
     font-size: 30px;
     line-height: 1.26;
@@ -248,24 +249,21 @@
 
 
 @media screen and (min-width: 768px) {
-    .products-background {
-        background-image: url(../images/tablet/product-bg.png);
+    .products{
+        background-image: url(../images/tablet/product-bg.jpg);
         background-repeat: no-repeat;
-        max-width: 768px;
+        background-size: cover;
+        max-width: 100%;
 
 
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-            .products-background {
-                background-image: url(../images/tablet/product-bg@2x.png)
+            .products{
+                background-image: url(../images/tablet/product-bg@2x.jpg)
             }
         }
     }
-    .products {
-        background-color: #F5F5F5;
-
-       }
     .products-list {
         display: flex;
         align-items: center;
@@ -408,23 +406,21 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .products-background {
-        background-image: url(../images/desktop/product-bgr-desktop.jpg);
-        max-width: 1200px;
+    .products{
+        background-image: url(../images/desktop/bg.jpg);
+        max-width: 100%;
+        background-size: cover;
 
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-            .products-background {
-                background-image: url(../images/desktop/product-bgr-desktop@2x.jpg)
+            .products{
+                background-image: url(../images/desktop/bg@2x.jpg)
             }
         }
         background-repeat: no-repeat;
     }
-        .products {
-            background-color: #F5F5F5;
-    
-        }
+        
     .products-list {
         gap: 32px;
         padding-bottom: 66px;

@@ -57,8 +57,8 @@ address {
   font-size: 12px;
   line-height: 1.86;
   letter-spacing: 0.04em;
-  color: #fcfcfc;
-  background-color: #f8d24e;
+  color: var(--white-font-color);
+  background-color: var(--accent-color);
   padding: 0 10px;
   @media screen and (min-width: 768px) {
     font-size: 16px;
@@ -187,7 +187,7 @@ address {
   color: #131313;
   border-radius: 10px;
   border: 1px solid transparent;
-  background-color: #f8d24e;
+  background-color: var(--accent-color);
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
@@ -207,7 +207,7 @@ address {
   height: 42px;
   padding-top: 13px;
   padding-bottom: 13px;
-  border: 2px solid #f8d24e;
+  border: 2px solid var(--accent-color);
   border-radius: 10px;
   background-color: #84a178;
   color: #131313;
@@ -232,10 +232,29 @@ address {
 
 .button__dark:hover,
 .button__dark:focus {
-  background-color: #0a8817;
+  background-color: var(--button-hover-color);
 }
 
 .button__light:hover,
 .button__light:focus {
-  border: 2px solid #0a8817;
+  border: 2px solid var(--button-hover-color);
+}
+
+.contacts {
+  position: relative;
+  top: -340px;
+}
+
+.contacts {
+  @media screen and (min-width: 768px) {
+    position: relative;
+    top: -300px;
+  }
+}
+
+.contacts {
+  @media screen and (min-width: 1200px) {
+    position: relative;
+    top: -100px;
+  }
 }

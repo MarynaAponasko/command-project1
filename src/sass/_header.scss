@@ -53,7 +53,7 @@
   
   &:hover,
   &:focus {
-    color: var(--axent-colour);
+    color: var(--accent-color);
   }
 }
 
@@ -74,7 +74,7 @@
   line-height: 1.2;
 
   color: #000000;
-  background-color: var(--axent-colour);
+  background-color: var(--accent-color);
   
   border-radius: 10px;
   border-color: transparent;
@@ -83,7 +83,7 @@
 
   &:hover,
   &:focus {
-    background-color: #0A8817;
+    background-color: var(--button-hover-color);
   }
 
   &:focus {
