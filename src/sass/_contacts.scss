@@ -139,22 +139,14 @@ address {
   max-width: 288px;
   border-top: 1px solid #e1e1e1;
   border-bottom: 1px solid #e1e1e1;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin: 24px 0;
+  padding: 24px 0;
   @media screen and (min-width: 768px) {
-    margin-top: 32px;
-    margin-bottom: 32px;
+    margin: 32px 0;
+    padding: 32px 0;
   }
 }
 
-.contacts__list {
-  margin-top: 24px;
-  margin-bottom: 24px;
-  @media screen and (min-width: 768px) {
-    margin-top: 32px;
-    margin-bottom: 32px;
-  }
-}
 .contacts__day:not(:last-child) {
   margin-bottom: 8px;
 }
@@ -196,7 +188,6 @@ address {
   border-radius: 10px;
   border: 1px solid transparent;
   background-color: #f8d24e;
-  margin-bottom: 8px;
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
@@ -222,6 +213,9 @@ address {
   color: #131313;
   transition-duration: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button__item {
+  margin-bottom: 8px;
 }
 
 .button__img {
