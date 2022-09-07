@@ -139,7 +139,9 @@
     .products-title {
         font-size: 30px;
     }
-    
+    .text-box {
+        min-height: 234px;
+    }
    
 
     .products-list__item:not(:last-child) {
@@ -216,15 +218,20 @@
     // flex-grow: 1;
 }
 .text-box{
-    flex-grow: 1;
+    display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 100%;
 }
+
 
 .btn-arrow {
     display: flex;
     align-items: center;
     background-color: transparent;
     border: none;
-    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
     cursor: pointer;
     border-radius: 50%;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -305,9 +312,6 @@
         top: -116px;
         left: 13px;
         border-radius: 50%;
-    }
-    .text-box {
-         flex-grow: 1;
     }
     .name-ice-coffee::before {
         content: '';
@@ -406,7 +410,9 @@
     .card-text {
         font-size: 14px;
     }
-
+    .text-box {
+        min-height: 254px;
+    }
     .products-title {
     margin-bottom: 200px;
     }
@@ -437,6 +443,9 @@
     .products-list {
         gap: 32px;
     }
+    .text-box {
+         min-height: 220px;
+     }
 
     .name-ice-cream::before {
         content: '';
