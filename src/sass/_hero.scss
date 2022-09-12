@@ -1,6 +1,10 @@
 .container {
   position: relative;
 }
+.names {
+  display: flex;
+  flex-direction: column-reverse;
+}
 .box-hero {
   width: 247px;
   height: 453px;
@@ -40,7 +44,7 @@
 .link-products {
   color: #000000;
   background: var(--backgraund-color);
-  border: 2px solid #f8d24e;
+  border: 2px solid var(--accent-color);
   border-radius: 8px;
   font-weight: 600;
   font-size: 8px;
@@ -49,12 +53,14 @@
   height: 24px;
   background: #84a278;
   padding: 5px 10px;
+  margin-right: 8px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
-    border-color: #0a8817;
+    border-color: var(--button-hover-color);
   }
   &:focus {
-    border: 2px solid #0a8817;
+    border: 2px solid var(--button-hover-color);
     color: white;
   }
 }
@@ -64,32 +70,28 @@
   height: 24px;
   text-align: center;
   text-decoration-line: underline;
-  text-decoration-color: var(--axent-colour);
-  color: var(--axent-colour);
+  text-decoration-color: var(--accent-color);
+  color: var(--accent-color);
   border: none;
   font-weight: 600;
   font-size: 8px;
   line-height: 1.25;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
-    color: #0a8817;
-    text-decoration-color: #0a8817;
+    color: var(--button-hover-color);
+    text-decoration-color: var(--button-hover-color);
   }
   &:focus {
     color: white;
     text-decoration-color: white;
   }
 }
-// .hero__points {
-//   position: absolute;
-//   bottom: 0;
-//   left: 0;
-//   width: 320px;
-// }
+
 .hero__main-photo {
   position: absolute;
   bottom: 0;
-  left: 60px;
+  left: 85px;
   filter: drop-shadow(10px 10px 45px white);
 }
 .ice-creams {
@@ -105,17 +107,17 @@
   }
 
   60% {
-    transform: rotate(275deg);
+    transform: rotate(267deg);
     transform-origin: top right;
     animation-timing-function: ease-in-out;
   }
   40% {
-    transform: rotate(275deg);
+    transform: rotate(267deg);
     transform-origin: top right;
     animation-timing-function: ease-in-out;
   }
   80% {
-    transform: rotate(275deg) translateY(0);
+    transform: rotate(267deg) translateY(0);
     opacity: 1;
     transform-origin: top right;
     animation-timing-function: ease-in-out;
@@ -164,9 +166,7 @@
   .hero__additional-content {
     display: none;
   }
-  .hero__btn {
-    margin-bottom: 239px;
-  }
+
   .container {
     width: 320px;
     margin-left: auto;
@@ -176,6 +176,8 @@
     display: none;
   }
   .box-hero {
+    margin: 0 auto;
+    min-width: 320px;
     position: relative;
     background-image: url('../images/mobile/points.png');
     background-repeat: no-repeat;
@@ -213,12 +215,7 @@
   .hero__btn {
     margin-bottom: 28px;
   }
-  // .hero__points {
-  //   position: absolute;
-  //   bottom: 0;
-  //   left: 0;
-  //   width: 768px;
-  // }
+
   .hero__photo {
     position: absolute;
     top: -5px;
@@ -227,13 +224,13 @@
   .hero__main-photo {
     position: absolute;
     bottom: -8px;
-    margin-left: 275px;
+    left: 415px;
     filter: drop-shadow(16px 16px 80px white);
   }
   .main_ice-cream {
     width: auto;
   }
-  .hero__info-number {
+  .numero {
     font-size: 28px;
     line-height: 1.21;
     text-align: right;
@@ -242,7 +239,7 @@
     font-weight: 900;
     margin-bottom: 8px;
   }
-  .hero__info-text {
+  .names {
     font-weight: 400;
     font-size: 8px;
     line-height: 1.25;
@@ -256,15 +253,16 @@
   .hero__info {
     position: absolute;
     top: 28px;
-    right: 0;
+    right: 32px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .box-hero {
-    width: 656px;
+    min-width: 768px;
     height: 343px;
     padding-top: 32px;
+    margin: 0 auto;
   }
 
   .hero__arrow {
@@ -286,9 +284,7 @@
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
-    // padding-left: 16px;
-    // padding-right: 16px;
-    // height: 560px;
+    margin: 0 auto;
   }
 
   .hero__title {
@@ -328,7 +324,7 @@
     width: 41px;
     height: 16px;
     left: 255px;
-    bottom: 45px;
+    bottom: 28px;
   }
 
   .hero__btn {
@@ -337,12 +333,7 @@
   .container {
     width: 1200px;
   }
-  // .hero__points {
-  //   position: absolute;
-  //   bottom: 45px;
-  //   width: 1200px;
-  //   height: 354px;
-  // }
+
   .ice-creams {
     width: 225px;
   }
@@ -350,13 +341,13 @@
   .hero__photo {
     z-index: 2;
     position: absolute;
-    top: -5px;
-    left: 15px;
+    top: 15px;
+    left: 0px;
   }
   .link-products {
     color: #000000;
     background: var(--backgraund-color);
-    border: 2px solid #f8d24e;
+    border: 2px solid var(--accent-color);
     border-radius: 8px;
     font-weight: 600;
     font-size: 14px;
@@ -374,8 +365,8 @@
     height: 40px;
     text-align: center;
     text-decoration-line: underline;
-    text-decoration-color: var(--axent-colour);
-    color: var(--axent-colour);
+    text-decoration-color: var(--accent-color);
+    color: var(--accent-color);
     border: none;
     font-weight: 600;
     font-size: 14px;
@@ -384,7 +375,7 @@
   .hero__main-photo {
     position: absolute;
     bottom: 0;
-    left: 354px;
+    left: 630px;
     filter: drop-shadow(16px 16px 80px white);
   }
 
@@ -392,7 +383,7 @@
     width: auto;
   }
 
-  .hero__info-number {
+  .numero {
     font-size: 46px;
     line-height: 1.21;
     text-align: right;
@@ -402,7 +393,7 @@
     margin-bottom: 4px;
   }
 
-  .hero__info-text {
+  .names {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.25;
@@ -418,6 +409,6 @@
   .hero__info {
     position: absolute;
     top: 56px;
-    right: 0;
+    right: 16px;
   }
 }

@@ -53,7 +53,7 @@
   
   &:hover,
   &:focus {
-    color: var(--axent-colour);
+    color: var(--accent-color);
   }
 }
 
@@ -74,7 +74,7 @@
   line-height: 1.2;
 
   color: #000000;
-  background-color: var(--axent-colour);
+  background-color: var(--accent-color);
   
   border-radius: 10px;
   border-color: transparent;
@@ -83,7 +83,7 @@
 
   &:hover,
   &:focus {
-    background-color: #0A8817;
+    background-color: var(--button-hover-color);
   }
 
   &:focus {
@@ -117,4 +117,28 @@
   @media screen and (min-width: 1200px) {
     display: none;
   }
+}
+
+.scrollup {
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  outline: none;
+  z-index: 999999;
+}
+
+.scrollup::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  transform: translate(-50%, -30%) rotate(45deg);
+  border-top: 5px solid var(--background-color);
+  border-left: 5px solid var(--background-color);
 }

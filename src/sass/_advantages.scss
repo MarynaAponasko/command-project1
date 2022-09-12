@@ -94,8 +94,8 @@ screen and (min-resolution: 192dpi) {
     }
 }
 
+
 .advantages__title {
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -103,7 +103,7 @@ screen and (min-resolution: 192dpi) {
     letter-spacing: 0.04em;
     text-transform: lowercase;
     text-transform: uppercase;
-    color: #FCFCFC;
+    color: var(--white-font-color);
     margin-top: 16px;
     margin-bottom: 18px;
 
@@ -128,7 +128,7 @@ screen and (min-resolution: 192dpi) {
     font-size: 12px;
     line-height: 1.7;
     text-align: center;
-    color: #FCFCFC;
+    color: var(--white-font-color);
     width: 230px;
 
 @media screen and (min-width: 768px) {
